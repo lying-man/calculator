@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Кредитный калькулятор</title>
+	<link rel="shortcut icon" href="calc.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Кредитный калькулятор</h1>	
+		<div class="body-calc">
+			<div class="body-calc-item sum-credit">
+				<div class="input-block">
+					<input type="text" value="" class="input__sum inp" id="input__sum" placeholder=" ">
+					<label class="title" for="input__sum">Сумма кредита</label>
+				</div>
+				<span class="input-sum__subtitle">Руб.</span>
+			</div>
+			<div class="body-calc-item temp-credit">
+				<div class="input-block">
+					<input type="text" value="" class="input__term inp" id="input__term" placeholder=" ">
+					<label class="title" for="input__term">Срок кредита</label>
+				</div>
+				<select class="drop">
+					<option value="month">Месяцев</option>
+					<option value="year">Лет</option>
+				</select>
+			</div>
+			<div class="body-calc-item procent-set">
+				<div class="input-block">
+					<input type="text" value="" class="input__procent inp" id="input__procent" placeholder=" ">
+					<label class="title" for="input__procent">Процентная ставка</label>
+				</div>
+				<span class="input-procent__subtitle">%</span>
+			</div>
+			<div class="check-rules">
+				Введены некорректные данные
+			</div>
+			<button class="count-pay">Рассчитать</button>
+		</div>
+		<div class="results results_disable">
+			<div class="result-item">
+				<div class="result-title">Ежемесячный платеж</div>
+				<div class="number-result month-pay">
+					0
+					<span class="result-span">руб.</span>
+				</div>
+			</div>
+			<div class="result-item">
+				<div class="result-title">Начисленные проценты</div>
+				<div class="number-result all-procent">
+					0
+					<span class="result-span">руб.</span>
+				</div>
+			</div>
+			<div class="result-item">
+				<div class="result-title">Долг + проценты</div>
+				<div class="number-result all-pay">
+					0
+					<span class="result-span">руб.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
